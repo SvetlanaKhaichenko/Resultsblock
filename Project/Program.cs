@@ -33,7 +33,6 @@ void PrintMas(string[] mas)
         if (mas[k].Length <= 3) System.Console.WriteLine($"{mas[k]}]");
         else System.Console.WriteLine("]");
     }
-    //if (mas[i] != null ) System.Console.Write($"{mas[i]} ");
 }
 
 
@@ -41,4 +40,4 @@ Console.WriteLine("Введите массив из строк через зап
 string read = Console.ReadLine().Replace(" ", "");
 string[] userarray = read.Split(",");
 
-PrintMas (FindArray(userarray));
+PrintMas(FindArray(userarray));
