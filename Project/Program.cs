@@ -19,6 +19,11 @@
 
 void PrintMas(string[] mas)
 {
+    for (int l = 0; l < mas.Length; l++)
+    {
+        if (mas[l] == null) Console.Write("");
+        else
+    {
     for (int i = 0; i < 1; i++)
     {
         if (mas[i].Length <= 3) System.Console.Write($"[{mas[i]}, ");
@@ -32,6 +37,8 @@ void PrintMas(string[] mas)
     {
         if (mas[k].Length <= 3) System.Console.WriteLine($"{mas[k]}]");
         else System.Console.WriteLine("]");
+    }
+    }
     }
 }
 
